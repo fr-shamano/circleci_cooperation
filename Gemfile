@@ -45,3 +45,25 @@ group :development do
   gem 'spring'
 end
 
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
+
+  # Pry
+  gem 'pry-rails'
+  gem 'pry'
+  gem 'pry-byebug'
+
+  # RuboCop
+  gem 'rubocop', '~> 0.40.0', require: false
+
+  # test
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'faker-japanese'
+  # capybara test
+  # gem 'capybara'
+  # gem 'poltergeist'
+  # gem 'database_cleaner'
+end
